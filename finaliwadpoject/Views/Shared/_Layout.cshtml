@@ -1,0 +1,61 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Restate sale - Real Estate</title>
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+
+
+<body>
+    <!-- Header -->
+    <header id="site-header" class="fixed-top">
+        <div class="container">
+
+
+            <nav class="navbar">
+                <h1><a class="navbar-brand" href="index.html"><span class="fas fa-home"></span> Real Estate</a></h1>
+                <button class="navbar-toggler" id="navbarToggler"><span class="fas fa-bars"></span></button>
+                <div class="navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                       
+                    </ul>
+                   
+                    <div class="search">
+                        <input class="search_box" type="checkbox" id="search_box">
+                        <label class="fas fa-search" for="search_box"></label>
+                        <div class="search_form">
+                            <form action="error.html" method="GET">
+                                <input type="text" placeholder="Search"><input type="submit" value="search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="theme-switch">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <div class="mode-container"><i class="fas fa-sun"></i><i class="fas fa-moon"></i></div>
+                    </label>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+            @RenderBody()
+
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
