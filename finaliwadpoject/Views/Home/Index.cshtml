@@ -1,12 +1,12 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = ViewBag.Title;
+    var testimonials = TempData["Testimonials"] as List<string>;
 }
-
 <section class="cover">
     <div class="container">
         <div class="middle-section text-center">
             <div class="section-width">
-                <p>It's great to be home!</p>
+                
                 <h2>Find a property today</h2>
                 <div class="most-searches">
                     <h4>Most Searches</h4>
@@ -51,7 +51,7 @@
 <!-- Features Section -->
 <section class="features">
     <div class="container">
-        <h2 class="section-title">Our Features</h2>
+        <h2 class="section-title"><p>@ViewBag.Message</p></h2>
         <div class="feature-items">
             <div class="feature-item">
                 <i class="fas fa-home"></i>

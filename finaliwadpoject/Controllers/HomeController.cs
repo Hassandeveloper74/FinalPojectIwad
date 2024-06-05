@@ -11,7 +11,11 @@ namespace finaliwadpoject.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.Title = "Welcome to Estate Sale";
+            ViewBag.Message = "Our Features";
+                      
             return View();
+            
         }
 
         public IActionResult Privacy()

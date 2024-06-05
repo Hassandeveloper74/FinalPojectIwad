@@ -12,10 +12,13 @@ body {
     margin: 0 auto;
 }
 
+
 /* Header styles */
 #site-header {
     width: 100%;
+    
     position: fixed;
+    
     top: 0;
     left: 0;
     z-index: 1000;
@@ -26,6 +29,7 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
+    
     align-items: center;
     padding: 1rem 0;
 }
@@ -48,6 +52,7 @@ body {
 .navbar-collapse {
     display: flex;
     justify-content: space-between;
+    background-color:aqua;
     align-items: center;
 }
 
